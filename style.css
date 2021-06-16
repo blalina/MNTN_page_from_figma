@@ -2,3 +2,52 @@ html, body {
     margin: 0;
     padding: 0;
 }
+
+body {
+    background: #0B1D26;
+    color: #fff;
+}
+
+.background-img {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+
+    background: url(../MNTN_page_from_figma/assets/images/Background.png) center no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+/* Header */
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
+
+    margin: 65px 80px;
+}
+
+.header-logo {
+    display: flex;
+}
+
+.nav li {
+    list-style-type: none;
+}
+
+.nav-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+
+    margin-right: 40px;
+}
+
+.menu {
+    display: flex;
+
+    margin: 0;
+}
