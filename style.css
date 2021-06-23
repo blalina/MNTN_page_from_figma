@@ -51,6 +51,8 @@ body {
     position: relative;
     background: #0B1D26;
     color: #fff;
+
+    scroll-behavior: smooth;
 }
 
 img {
@@ -64,7 +66,7 @@ img {
     left: 0;
 
     width: 100vw;
-    height: 150vh;
+    height: calc(100vw/1.01);
 
     background: url(../MNTN_page_from_figma/assets/images/Background.png) center no-repeat;
     background-size: cover;
@@ -214,6 +216,8 @@ img {
     color: #FBD784;
 
     text-transform: uppercase;
+
+    padding-left: 20px;
 }
 
 .heading-section {
@@ -261,9 +265,14 @@ img {
 
 .row {
     max-width: 60%;
-    padding: 3em 7em;
-    /*padding: 30px 60px;
-    margin: 0 50px;*/
+}
+
+.padding-right {
+    padding: 3em 5em;
+}
+
+.padding-left {
+    padding: 3em 1em 3em 7em;
 }
 
 .block-img-right {
@@ -338,12 +347,13 @@ img {
     max-width: 1462px;
 
     padding: 0 6em;
-    margin: 160px 0 50px 0;
+    margin: 200px auto 50px auto;
 }
 
 .text-block {
     display: flex;
     flex-direction: column;
+    max-width: 60%;
 }
 
 .footer-text {
@@ -353,13 +363,25 @@ img {
     line-height: 25px; 
 }
 
+.footer-info-copyright {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 25px;
+
+    color: rgba(255, 255, 255, 0.5);
+
+    padding-top: 5em;
+    margin: 0;
+}
+
 .footer-blocks {
     display: flex;
-    justify-content: flex-end;
+    max-width: 40%;
 }
 
 .footer-block-one {
-    padding-right: 10em;
+    padding-right: 12em;
 }
 
 .footer-block-one h3, .footer-block-two h3 {
@@ -382,4 +404,60 @@ img {
 
 .footer-item {
     padding-top: 16px;
+}
+
+/* Adaptive */
+@media (max-width: 1378px) {
+    .start-section {
+        max-width: 70%;
+    }
+
+    .footer-blocks {
+        max-width: 50%;
+    }
+}
+/* No adaptive added for blocks */
+@media (max-width: 1099px) {
+    .text {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    
+    .heading-section {
+        font-size: 65px;
+        line-height: 75px;
+    }
+    
+    .scroll-down {
+        font-size: 16px;
+        line-height: 18px;
+    }
+    
+    .scroll-down::after {
+        font-size: 18px;
+    }
+
+    .footer-list {
+        font-size: 14px;
+        line-height: 6px; 
+    }
+
+    .footer-block-one h3, .footer-block-two h3 {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .footer-text {
+        font-size: 12px;
+        line-height: 20px; 
+    }
+    
+    .footer-info-copyright {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .footer-block-one {
+        padding-right: 7em;
+    }
 }
