@@ -38,6 +38,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -49,10 +53,8 @@ h1, h2, h3 {
 
 body {
     position: relative;
-    background: #0B1D26;
     color: #fff;
-
-    scroll-behavior: smooth;
+    background: #0B1D26;
 }
 
 img {
@@ -68,7 +70,7 @@ img {
     width: 100vw;
     height: calc(100vw/1.01);
 
-    background: url(../MNTN_page_from_figma/assets/images/Background.png) center no-repeat;
+    background: url(assets/images/Background.png) center no-repeat;
     background-size: cover;
     z-index: -1000;
 }
@@ -122,7 +124,6 @@ img {
 
 .login {
     position: relative;
-
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 17px;
@@ -177,7 +178,6 @@ img {
 
 .border-right {
     position: absolute;
-
     border-right: 3px solid rgba(255, 255, 255, 0.5);
 
     padding-right: 10px;
@@ -194,9 +194,7 @@ img {
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
-
     color: rgba(255, 255, 255, 0.5);
-
     text-decoration: none;
 
     padding: 15px;
@@ -210,6 +208,7 @@ img {
 /* Start section */ 
 .start-section {
     max-width: 920px;
+
     margin: 50px auto 500px auto;
 }
 
@@ -218,9 +217,7 @@ img {
     font-weight: 900;
     font-size: 18px;
     line-height: 22px;
-
     color: #FBD784;
-
     text-transform: uppercase;
 
     padding-left: 20px;
@@ -231,7 +228,6 @@ img {
     font-weight: 600;
     font-size: 80px;
     line-height: 90px;
-
     text-transform: capitalize;
 
     padding: 30px 0;
@@ -242,9 +238,7 @@ img {
     font-weight: 500;
     font-size: 18px;
     line-height: 21px;
-
     text-decoration: none;
-
     color: #fff;
 }
 
@@ -303,9 +297,7 @@ img {
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
-
     text-decoration: none;
-
     color: #FBD784;
 }
 
@@ -316,6 +308,7 @@ img {
 }
 
 .tagline {
+    display: inline;
     position: relative;
     right: -80px;
 }
@@ -329,10 +322,10 @@ img {
     width: 70px;
     height: 2px;
 
-    background: #FBD784;
     transform: translateY(-50%);
-
     content: ''; 
+
+    background: #FBD784;
 }
 
 .count {
@@ -374,7 +367,6 @@ img {
     font-weight: 500;
     font-size: 14px;
     line-height: 25px;
-
     color: rgba(255, 255, 255, 0.5);
 
     padding-top: 5em;
@@ -413,7 +405,7 @@ img {
 }
 
 /* Adaptive */
-@media (max-width: 1920px) {
+@media (min-width: 1379px) {
     .nav {
         padding-right: 19em;
     }
@@ -470,6 +462,11 @@ img {
         max-width: 50%; 
     }
 
+    .heading-h2 {
+        font-size: 45px;
+        line-height: 55px;
+    }
+
     .footer-list {
         font-size: 14px;
         line-height: 16px; 
@@ -492,13 +489,6 @@ img {
 
     .footer-block-one {
         padding-right: 7em;
-    }
-}
-
-@media (max-width: 1090px) {
-    .heading-h2 {
-        font-size: 45px;
-        line-height: 55px;
     }
 }
 
@@ -583,7 +573,7 @@ img {
         width: 40px;
         height: 40px;
 
-        background: url(../MNTN_page_from_figma/assets/images/menu_white_24dp.svg)no-repeat;
+        background: url(assets/images/menu_white_24dp.svg) no-repeat;
         background-size: contain;
 
         cursor: pointer;
@@ -683,6 +673,19 @@ img {
         line-height: 16px;
     }
 
+    .menu {
+        font-size: 15px;
+    }
+
+    .nav .menu {
+        top: 104px;
+        left: 127px;
+    }
+
+    .nav-link {
+        margin-right: 30px;
+    }
+
 /* Content */
     .start-section {
         margin: 50px auto 200px auto;
@@ -780,6 +783,24 @@ img {
         top: 90px;
         left: 40px;
     }
+
+    .menu {
+        font-size: 14px;
+    }
+
+    .nav .menu {
+        top: 93px;
+        left: 78px;
+    }
+
+    .nav-link {
+        margin-right: 20px;
+    }
+
+    .mrg-o {
+        margin-right: 0;
+    }
+
 /* Content */
     .start-section {
         margin: 50px 40px 160px 40px;
